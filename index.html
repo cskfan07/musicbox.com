@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>musicbox.com - Your favourite music is here</title>
+        <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+        <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+
+    background-color: antiquewhite;
+
+}
+
+
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+nav{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+nav ul{
+
+    display: flex;
+
+    align-items: center;
+
+    list-style-type: none;
+
+    height: 65px;
+
+    background-color: black;
+
+    color: white;
+
+}
+
+
+
+nav ul li {
+	padding: 0 37px;
+}
+ 
+.about:hover{
+    font-size:1.5vw;
+    
+    background-color: rgb(209, 190, 190);
+    color:black;
+    border-radius: 5%;
+}
+ 
+
+
+
+.brand img{
+
+    width: 65px;
+
+    padding: 0 8px;
+
+}
+
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    font-weight: bolder;
+
+    font-size: 1.3rem;
+
+}
+
+
+
+.container {
+	min-height: 72vh;
+	background-color: black;
+	color: white;
+	font-family: 'Varela Round', sans-serif;
+	display: flex;
+	margin: 23px auto;
+	width: 70%;
+	border-radius: 12px;
+	padding: 34px;
+	background-image: url('logo.jpg');
+	background-size: 30vw;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+
+
+.bottom{
+
+    position: sticky;
+
+    bottom: 0;
+
+    height: 130px;
+
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column; 
+
+}
+.conter {
+    background-color: white;
+    position: absolute;
+    left: 77vw;
+    top: 18vh;
+}
+
+
+.icons{
+
+    margin-top: 14px; 
+
+}
+
+.icons i{
+
+    cursor: pointer;
+
+}
+
+
+
+#myProgressBar{
+
+    width: 80vw; 
+
+    cursor: pointer;
+
+}
+
+
+
+.songItemContainer{
+
+    margin-top: 74px;
+
+}
+
+
+
+.songItem{
+
+    height: 50px;
+
+    display: flex;
+
+    background-color: white;
+
+    
+
+    color: black;
+
+    margin: 12px 0;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-radius: 34px;
+
+}
+
+
+
+.songItem img{
+
+    width: 3vw;
+
+    margin: 0 23px;
+
+    border-radius: 34px;
+
+}
+.songlist{
+    font-size: 2vw;
+}
+
+
+
+.timestamp{
+
+    margin: 0 23px;
+
+}
+
+
+
+.timestamp i{
+
+    cursor: pointer;
+
+}
+
+
+
+.songInfo{
+
+    position: absolute;
+
+    left: 10vw;
+
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+
+
+.songInfo img{
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease-in;
+
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+
+    body {
+
+      background-color: red;
+
+    }
+
+  }
+
+
+
+#dance {
+
+height: 75px;
+
+opacity:  0;
+
+transition: opacity 0.4s ease-in;
+
+}
+.about{
+    text-decoration: none;
+    color: white;
+}
+      
+      </style>
+
+        </head>
+
+<body>
+
+    <nav>
+
+        <ul>
+
+            <li class="brand"><img src="logo.jpg" alt="Spotify"  > MUSIC<h1 style="color: red; font-size: 22px;">BOX</h1>.<small>com</small></li>
+
+            
+
+            <li><a href="about.html" target="_blank" class="about">ABOUT</a></li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <div class="container">
+
+        
+
+        <div class="songList">
+
+            <h1> Play Music <img src="dancing.gif" alt=" " id="dance"> </h1>
+
+            <div class="songItemContainer">
+
+
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">03:14 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">02:38 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:07 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">03:28 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:29 <i id="4" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">03:44 <i id="5" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+                <div class="songItem">
+
+                    <img alt="1">
+
+                    <span class="songName">Let me Love You</span>
+
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i> </span></span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="songBanner"></div>
+
+        <div class="conter">
+
+           <!-- hitwebcounter Code START -->
+<a href="https://www.hitwebcounter.com" target="_blank">
+    <img src="https://hitwebcounter.com/counter/counter.php?page=8366550&style=0024&nbdigits=4&type=page&initCount=100" title="Free Counter" Alt="web counter"   border="0" /></a>                  
+        </div>
+
+    </div>
+
+
+
+    <div class="bottom">
+
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+
+        <div class="icons">
+
+            <!-- fontawesome icons -->
+
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+
+            <i class="fas fa-3x fa-step-forward" id="next"></i> 
+
+        </div>
+
+        <div class="songInfo">
+
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName"> SELECT MUSIC </span>
+
+        </div>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+	display: flex;
+	height: 7vw;
+	justify-content: end;
+	background-color:  rgb(0, 76, 136);
+	font-size: 2vw;
+}
+ul {
+	list-style-type: none;
+	display: flex;
+	position: absolute;
+	margin: 2vw;
+	left: 60vw;
+}
+li {
+	font-family: 'Shantell Sans', cursive;
+	/* margin: 0vw 0vw; */
+	color: white;
+	cursor: pointer;
+	font-size: 1.6vw;
+	text-align: center;
+	width: 6vw;
+	height: 2vw;
+	position: relative;
+	top: -0.5vw;
+	display: flex;
+	justify-content: center;
+	padding: 1vw;
+	left: 23vw;
+    
+}
+
+.home{
+	text-decoration: none;
+	color: white;
+}
+h1 {
+	color: #fdfdfd;
+	display: flex;
+	position: absolute;
+	left: 3vw;
+	top: 0vw;
+	font-family: 'Homemade Apple', cursive;
+	cursor: no-drop;
+}
+
+.home:hover{
+    font-size:1.5vw;
+    
+    background-color: rgb(209, 190, 190);
+    color:black;
+    border-radius: 5%;
+}
+ 
+.one{
+    text-decoration: none;
+}
+.wel{
+    width: 100vw;
+    background-color: rgb(253, 253, 253);
+    height: 20vw;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    animation-name: example;
+    animation-duration: 4s;
+}
+h2 {
+	padding: 8vw;
+	font-size: 3vw;
+}
+#info {
+	display: flex;
+	 
+	height: 78vw;
+	position: relative;
+	justify-content: center;
+}
+
+
+@keyframes example {
+    0%   {background-color: rgb(255, 251, 0);}
+   
+    100% {background-color: rgb(0, 119, 128);}
+  }
+
+  footer {
+	background-color: red;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	 
+	top: 36vw;
+	left: 46vw;
+}
+.circle {
+	display: flex;
+	height: 15vw;
+	position: absolute;
+	width: 15vw;
+	border-radius: 50%;
+	left: 15vw;
+	border: 1px solid black;
+	background-image: url("myimage.jpeg");
+	background-size: 15vw;
+	background-repeat: no-repeat;
+	cursor: no-drop;
+	top: 2vw;
+}
+.data {
+	display: flex;
+	position: absolute;
+	justify-content: flex-start;
+	height: 15vw;
+	width: 55vw;
+	left: 40vw;
+	border: 1px solid black;
+	border-radius: 49px;
+	top: 2vw;
+}
+
+p {
+	position: absolute;
+	top: 7vw;
+	left: 2vw;
+	color: black;
+	font-size: 2vw;
+	font-family: 'Shantell Sans', cursive;
+}
+.name {
+	font-family: 'Shantell Sans', cursive;
+	font-size: 3vw;
+	color: black;
+	position: absolute;
+	top: 2vw;
+	left: 2vw;
+}
+
+.link {
+	display: flex;
+	justify-content: center;
+	height:6vw;
+	width: -moz-available;
+	 
+	position: absolute;
+	top: 48vw;
+}
+.pic1 {
+	display: flex;
+	height: 4vw;
+	border-radius: 2vw;
+	position: relative;
+	margin: 1vw;
+}
+.link p {
+	font-size: 2vw;
+	position: relative;
+	top: 2vw;
+	left: -7vw;
+	/* border: 1px solid; */
+	/* border-radius: 1vw; */
+}
